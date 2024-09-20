@@ -1,10 +1,10 @@
 <mat-drawer-container class="container" autosize>
   <mat-drawer #drawer class="sidenav" mode="side">
-    <img src="assets/img/side-image.svg" alt="Navigation image">
+    <img ngSrc="assets/img/side-image.svg" alt="Navigation image" width="842" height="589" priority>
     <mat-nav-list class="nav-list">
-      <a mat-list-item routerLink="home">
-        <i class="material-icons">home</i>
-        Home
+      <a mat-list-item routerLink="dashboard">
+        <i class="material-icons">dashboard</i>
+        dashboard
       </a>
       <a mat-list-item routerLink="persons">
         <i class="material-icons">account_circle</i>
@@ -18,9 +18,9 @@
         <i class="material-icons">support</i>
         Chamados
       </a>
-      <a mat-list-item routerLink="test">
+      <a mat-list-item routerLink="gitHub">
         <i class="material-icons">code</i>
-        Teste
+        GitHub
       </a>
       <a mat-list-item (click)="logout()">
         <i class="material-icons">logout</i>

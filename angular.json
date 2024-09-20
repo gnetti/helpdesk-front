@@ -1,8 +1,5 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "cli": {
-    "analytics": "79f1c321-49a1-4d9d-849d-895038e5b8e0"
-  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -56,7 +53,8 @@
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "preserveSymlinks": true
           },
           "configurations": {
             "production": {
@@ -95,10 +93,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "helpdesk:build:production"
+              "buildTarget": "helpdesk:build:production"
             },
             "development": {
-              "browserTarget": "helpdesk:build:development"
+              "buildTarget": "helpdesk:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -106,11 +104,10 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "helpdesk:build"
+            "buildTarget": "helpdesk:build"
           }
         }
       }
     }
-  },
-  "defaultProject": "helpdesk"
+  }
 }
